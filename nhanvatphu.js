@@ -17,18 +17,15 @@ class nhanVatPhu {
 
 
     }
-    drawImgOne(ctx) {
+
+    move(ctx) {
         ctx.drawImage(this.img, this.x, this.y, this.Cdai, this.Crong );
-    }
-    move() {
             if (this.y < 650) {
                 this.y += this.speed;
-                console.log('co vao', this.y);
-            } else if ( this.y === 650) {
+            } else {
                 this.y = 0;
-                console.log()
+                // this.speed = 1+ Math.random()* 10;
 
         }
-
     }
 }
